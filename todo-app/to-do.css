@@ -1,0 +1,147 @@
+body{
+    background-color:#f9fafb;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #374151;
+  letter-spacing: 0.5px;
+}
+
+
+
+#input,#inputbutton{
+    font-size: 1rem;
+    padding: 0.6rem 0.9rem;
+    border-radius: 6px;
+}
+#input{
+    width: 260px;
+    border:1px solid #d1d5db;
+    outline: none;
+}
+#input:focus{
+    border-color: #2563eb;
+}
+
+#inputbutton{
+    border: none;
+    background-color: #2563eb;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+inputbutton:hover {
+  background-color: #1e40af;
+}
+
+#inputbutton:active {
+  transform: scale(0.97);
+}
+
+#ta {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 70%;
+}
+
+#ta li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.4rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background-color: #fff;
+  
+}
+
+#ta input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #2563eb;
+  cursor: pointer;
+}
+
+
+#ta button {
+  margin-left: auto;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  border: 1px solid #dc2626;
+  background-color: #fff;
+  color: #dc2626;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#ta button:hover {
+  background-color: #dc2626;
+  color: white;
+}
+
+
+@media (max-width: 480px) {
+    
+    body {
+        padding: 1rem;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 100%;
+        gap: 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+  .inputsection {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 0.5rem;
+}
+  #input {
+  flex: 1;              
+  padding: 0.8rem;
+  font-size: 1rem;
+}
+
+#inputbutton {
+  padding: 0.8rem 1rem; 
+  font-size: 1rem;
+  white-space: nowrap;  
+}
+   #ta {
+    width: 100%;
+  }
+    #ta li {
+    padding: 0.7rem 0.8rem;
+  }
+
+.container,
+.inputsection,
+#ta,
+#ta li {
+  min-width: 0;
+}
+
+}
