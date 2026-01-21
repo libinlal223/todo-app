@@ -6,7 +6,8 @@ let inpbtn = document.getElementById('inputbutton');
 
 function add() {
 
-  inpbtn.addEventListener('click', () => {
+  inpbtn.addEventListener('click', (e) => {
+    e.preventDefault()
 
     const inpvalue = input.value;
 
