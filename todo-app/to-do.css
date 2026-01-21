@@ -1,5 +1,6 @@
 body{
-    background-color:#f9fafb;
+    background-image: url(image/bg.jpg);
+    background-size: cover;
 }
 
 html, body {
@@ -100,7 +101,9 @@ inputbutton:hover {
     
     body {
         padding: 1rem;
-    }
+        background-image: url('image/mbbg.jpg');
+      background-position: top center;
+      }
     
     .container {
         width: 100%;
@@ -143,5 +146,6 @@ inputbutton:hover {
 #ta li {
   min-width: 0;
 }
+
 
 }
